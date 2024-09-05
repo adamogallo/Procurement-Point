@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procurement Point</title>
+    <title>Procurement Templates Hub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,11 +52,14 @@
             text-decoration: none;
             color: #0066cc;
         }
-        .upload-section {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border: 1px solid #ccc;
+        .template-section {
             margin-top: 20px;
+        }
+        .template {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
         }
         footer {
             background-color: #333;
@@ -72,14 +75,13 @@
 <body>
 
 <header>
-    <h1>Procurement Point</h1>
+    <h1>Procurement Templates Hub</h1>
     <p>Your go-to place for procurement templates and resources</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
     <a href="#">Browse Templates</a>
-    <a href="#">Submit a Template</a>
     <a href="#">FAQ</a>
 </nav>
 
@@ -87,44 +89,191 @@
     <div class="sidebar">
         <h2>Categories</h2>
         <ul>
-            <li><a href="#">Contract Templates</a></li>
-            <li><a href="#">RFP Documents</a></li>
-            <li><a href="#">Bid Forms</a></li>
-            <li><a href="#">Supplier Agreements</a></li>
-            <li><a href="#">Purchase Orders</a></li>
+            <li><a href="#contract-templates">Contract Templates</a></li>
+            <li><a href="#rfp-documents">RFP Documents</a></li>
+            <li><a href="#bid-forms">Bid Forms</a></li>
+            <li><a href="#supplier-agreements">Supplier Agreements</a></li>
+            <li><a href="#purchase-orders">Purchase Orders</a></li>
         </ul>
     </div>
 
     <div class="main-content">
-        <h2>Latest Templates</h2>
-        <ul class="template-list">
-            <li><a href="#">Procurement Contract Template (PDF)</a></li>
-            <li><a href="#">Supplier Agreement Form (Word)</a></li>
-            <li><a href="#">Request for Proposal (RFP) Template</a></li>
-            <li><a href="#">Purchase Order Template (Excel)</a></li>
-        </ul>
+        <h2>Available Templates</h2>
 
-        <div class="upload-section">
-            <h2>Submit Your Template</h2>
-            <form action="#" method="post" enctype="multipart/form-data">
-                <label for="template-title">Template Title:</label><br>
-                <input type="text" id="template-title" name="template-title" required><br><br>
-
-                <label for="file-upload">Choose file:</label><br>
-                <input type="file" id="file-upload" name="file-upload" required><br><br>
-
-                <label for="description">Description:</label><br>
-                <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
-
-                <input type="submit" value="Submit Template">
-            </form>
+        <!-- Contract Templates Section -->
+        <div id="contract-templates" class="template-section">
+            <h3>Contract Templates</h3>
+            <div class="template">
+                <h4>General Contract Template</h4>
+                <pre>
+This General Contract ("Agreement") is entered into on [Date] between [Party 1] and [Party 2]. Both parties agree to the following terms and conditions:
+1. Scope of Work: [Describe work to be performed]
+2. Payment: [Payment details]
+3. Term: [Duration of the contract]
+4. Confidentiality: [Confidentiality agreement]
+Signatures:
+[Party 1] ___________________ [Party 2] ___________________
+                </pre>
+            </div>
+            <div class="template">
+                <h4>Service Agreement Template</h4>
+                <pre>
+This Service Agreement ("Agreement") is made on [Date] between [Service Provider] and [Client].
+1. Services to be Provided: [Describe services]
+2. Fees: [Service fee details]
+3. Payment Terms: [Payment terms]
+4. Duration: [Agreement duration]
+Signatures:
+[Service Provider] _______________ [Client] _______________
+                </pre>
+            </div>
+            <div class="template">
+                <h4>Consulting Contract Template</h4>
+                <pre>
+This Consulting Agreement is entered into on [Date] between [Consultant] and [Client].
+1. Services: [Description of consulting services]
+2. Compensation: [Payment details]
+3. Timeline: [Project timeline]
+4. Termination: [Conditions for termination]
+Signatures:
+[Consultant] _______________ [Client] _______________
+                </pre>
+            </div>
         </div>
-    </div>
-</div>
 
-<footer>
-    <p>&copy; 2024 Procurement Templates Hub</p>
-</footer>
+        <!-- RFP Documents Section -->
+        <div id="rfp-documents" class="template-section">
+            <h3>RFP Documents</h3>
+            <div class="template">
+                <h4>Request for Proposal (RFP) Template</h4>
+                <pre>
+Subject: Request for Proposal [Project Name]
+Dear [Recipient],
+We invite you to submit a proposal for [Project Description]. Please provide detailed information on your experience, pricing, and timelines.
+Sincerely,
+[Your Name]
+                </pre>
+            </div>
+            <div class="template">
+                <h4>RFP Evaluation Template</h4>
+                <pre>
+Project: [Project Name]
+Evaluation Criteria:
+1. Experience: [Weight]
+2. Pricing: [Weight]
+3. Timeline: [Weight]
+4. Quality of Proposal: [Weight]
+Scoring: [Provide scoring mechanism]
+                </pre>
+            </div>
+            <div class="template">
+                <h4>Supplier RFP Response Template</h4>
+                <pre>
+To: [Company Name]
+Subject: Response to RFP for [Project Name]
+Dear [Recipient],
+We are pleased to submit our proposal for [Project Name]. Attached is our detailed response outlining our approach, pricing, and delivery timelines.
+Sincerely,
+[Your Name]
+                </pre>
+            </div>
+        </div>
 
-</body>
-</html>
+        <!-- Bid Forms Section -->
+        <div id="bid-forms" class="template-section">
+            <h3>Bid Forms</h3>
+            <div class="template">
+                <h4>Bid Submission Form</h4>
+                <pre>
+Bid Submission Form
+Project: [Project Name]
+Bidder: [Your Company Name]
+Bid Amount: [Bid Amount]
+Signature: _______________ Date: _______________
+                </pre>
+            </div>
+            <div class="template">
+                <h4>Competitive Bid Form</h4>
+                <pre>
+Competitive Bid Form
+Project: [Project Name]
+Bidder: [Bidder Name]
+Proposed Price: [Price]
+Deadline: [Submission Deadline]
+                </pre>
+            </div>
+            <div class="template">
+                <h4>Bid Evaluation Form</h4>
+                <pre>
+Bid Evaluation Form
+Project: [Project Name]
+Bids Evaluated By: [Name]
+1. Price: [Score]
+2. Experience: [Score]
+3. Delivery Time: [Score]
+Total Score: _______________
+                </pre>
+            </div>
+        </div>
+
+        <!-- Supplier Agreements Section -->
+        <div id="supplier-agreements" class="template-section">
+            <h3>Supplier Agreements</h3>
+            <div class="template">
+                <h4>Supplier Agreement Template</h4>
+                <pre>
+Supplier Agreement
+Supplier: [Supplier Name]
+Client: [Client Name]
+1. Products/Services: [Details of products/services]
+2. Payment Terms: [Payment details]
+3. Delivery: [Delivery terms]
+4. Confidentiality: [Confidentiality clause]
+Signatures:
+[Supplier] _______________ [Client] _______________
+                </pre>
+            </div>
+            <div class="template">
+                <h4>Non-Disclosure Agreement (NDA)</h4>
+                <pre>
+Non-Disclosure Agreement (NDA)
+Parties: [Disclosing Party] and [Receiving Party]
+1. Confidential Information: [Define confidential information]
+2. Obligations: [Receiving Party’s obligations]
+3. Term: [Duration of confidentiality]
+Signatures:
+[Disclosing Party] _______________ [Receiving Party] _______________
+                </pre>
+            </div>
+            <div class="template">
+                <h4>Supplier Performance Agreement</h4>
+                <pre>
+Supplier Performance Agreement
+Supplier: [Supplier Name]
+Client: [Client Name]
+1. Performance Expectations: [Describe performance expectations]
+2. Penalties for Non-Performance: [Outline penalties]
+3. Duration: [Agreement duration]
+Signatures:
+[Supplier] _______________ [Client] _______________
+                </pre>
+            </div>
+        </div>
+
+        <!-- Purchase Orders Section -->
+        <div id="purchase-orders" class="template-section">
+            <h3>Purchase Orders</h3>
+            <div class="template">
+                <h4>Standard Purchase Order</h4>
+                <pre>
+Purchase Order # [Number]
+Supplier: [Supplier Name]
+Item: [Item Description]
+Quantity: [Quantity]
+Price: [Price]
+Delivery Date: [Date]
+Signature: _______________ Date: _______________
+                </pre>
+            </div>
+            <div class="template">
+                <
